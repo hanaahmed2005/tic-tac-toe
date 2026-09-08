@@ -40,7 +40,9 @@ tic-tac-toe/
 
 ## Live Demo
 
-Coming soon...
+## Live Demo
+
+https://hanaahmed2005.github.io/tic-tac-toe/tic-tac-toe.html
 
 ## Author
 
