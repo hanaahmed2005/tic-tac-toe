@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="A responsive two-player Tic Tac Toe game built with HTML, CSS and JavaScript.">
+    <meta name="keywords" content="Tic Tac Toe, Tic Tac Toe Game, JavaScript Game, HTML CSS JavaScript">
+    <meta name="author" content="Hana Ahmed Elsabbagh">
+
+    <title>Tic Tac Toe Game</title>
+
+    <link rel="stylesheet" href="tic-tac-toe.css">
+</head>
+
+<body>
+
+    <!-- =====================================================
+         GAME CONTAINER
+    ====================================================== -->
+
+    <main class="game-container">
+
+        <!-- Header -->
+        <header class="game-header">
+
+            <p class="game-label">CLASSIC GAME</p>
+
+            <h1>
+                TIC <span>TAC</span> TOE
+            </h1>
+
+            <p class="game-description">
+                Challenge your opponent and get three in a row!
+            </p>
+
+        </header>
+
+
+        <!-- =====================================================
+             GAME INFO
+        ====================================================== -->
+
+        <section class="game-info">
+
+            <div class="player player-x active-player">
+
+                <span class="player-symbol">X</span>
+
+                <div class="player-details">
+                    <span class="player-label">PLAYER</span>
+                    <strong>Player X</strong>
+                </div>
+
+            </div>
+
+
+            <div class="turn-indicator">
+
+                <span class="turn-label">CURRENT TURN</span>
+
+                <strong id="turn-text">PLAYER X</strong>
+
+            </div>
+
+
+            <div class="player player-o">
+
+                <span class="player-symbol">O</span>
+
+                <div class="player-details">
+                    <span class="player-label">PLAYER</span>
+                    <strong>Player O</strong>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             GAME BOARD
+        ====================================================== -->
+
+        <section class="board-section">
+
+            <div class="game-board" id="game-board">
+
+                <button class="cell" data-index="0" aria-label="Cell 1"></button>
+
+                <button class="cell" data-index="1" aria-label="Cell 2"></button>
+
+                <button class="cell" data-index="2" aria-label="Cell 3"></button>
+
+                <button class="cell" data-index="3" aria-label="Cell 4"></button>
+
+                <button class="cell" data-index="4" aria-label="Cell 5"></button>
+
+                <button class="cell" data-index="5" aria-label="Cell 6"></button>
+
+                <button class="cell" data-index="6" aria-label="Cell 7"></button>
+
+                <button class="cell" data-index="7" aria-label="Cell 8"></button>
+
+                <button class="cell" data-index="8" aria-label="Cell 9"></button>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             GAME STATUS
+        ====================================================== -->
+
+        <section class="game-status" aria-live="polite">
+
+            <p id="game-message">
+                Player X's turn
+            </p>
+
+        </section>
+
+
+        <!-- =====================================================
+             RESET BUTTON
+        ====================================================== -->
+
+        <div class="game-actions">
+
+            <button
+                type="button"
+                class="reset-button"
+                id="reset-button"
+            >
+                <span class="reset-icon">↻</span>
+                RESET GAME
+            </button>
+
+        </div>
+
+
+        <!-- =====================================================
+             INSTRUCTIONS
+        ====================================================== -->
+
+        <section class="instructions">
+
+            <h2>HOW TO PLAY</h2>
+
+            <div class="instructions-content">
+
+                <div class="instruction-item">
+
+                    <span class="instruction-number">01</span>
+
+                    <p>
+                        Player X starts the game.
+                    </p>
+
+                </div>
+
+
+                <div class="instruction-item">
+
+                    <span class="instruction-number">02</span>
+
+                    <p>
+                        Take turns selecting an empty square.
+                    </p>
+
+                </div>
+
+
+                <div class="instruction-item">
+
+                    <span class="instruction-number">03</span>
+
+                    <p>
+                        Get three matching symbols in a row to win.
+                    </p>
+
+                </div>
+
+
+                <div class="instruction-item">
+
+                    <span class="instruction-number">04</span>
+
+                    <p>
+                        If all squares are filled with no winner, it's a draw.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =====================================================
+         WINNER MODAL
+    ====================================================== -->
+
+    <div
+        class="result-modal"
+        id="result-modal"
+        aria-hidden="true"
+    >
+
+        <div class="result-modal-content">
+
+            <span class="result-icon" id="result-icon">🏆</span>
+
+            <p class="result-label">GAME OVER</p>
+
+            <h2 id="result-title">
+                PLAYER X WINS!
+            </h2>
+
+            <p id="result-description">
+                Congratulations! You got three in a row.
+            </p>
+
+            <button
+                type="button"
+                class="play-again-button"
+                id="play-again-button"
+            >
+                PLAY AGAIN
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- JavaScript -->
+    <script src="tic-tac-toe.js"></script>
+
+</body>
+</html>
