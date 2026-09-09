@@ -39,15 +39,15 @@ tic-tac-toe/
 └── README.md
 
 ## Live Demo
-
 https://hanaahmed2005.github.io/tic-tac-toe/tic-tac-toe.html
+
 ## Screenshots
 
-[Tic Tac Toe Start](screenshots/tic-tac-toe-start.png)
+[![Tic Tac Toe Start](./screenshots/tic-tac-toe-start.png)](./screenshots/tic-tac-toe-start.png)
 
-[Tic Tac Toe Playing](screenshots/tic-tac-toe-playing.png)
+[![Tic Tac Toe Playing](./screenshots/tic-tac-toe-playing.png)](./screenshots/tic-tac-toe-playing.png)
 
-[Tic Tac Toe Result](screenshots/tic-tac-toe-result.png)
+[![Tic Tac Toe Result](./screenshots/tic-tac-toe-result.png)](./screenshots/tic-tac-toe-result.png)
 
 ## Author
 
